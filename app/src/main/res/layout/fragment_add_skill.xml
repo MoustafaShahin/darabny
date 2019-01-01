@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.drrabny.darrbyproject.Fragments.AddSkillFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="600dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:background="@color/barrbny">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6">
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".06"
+                    android:fontFamily="@font/cairosemibold"
+                    android:gravity="center"
+                    android:text="SKILL"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".30"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp">
+
+                    <android.support.v7.widget.CardView
+                        android:paddingTop="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight=".8"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/barrbny"
+                        app:cardPreventCornerOverlap="false">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".020"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/barrbny"
+                                android:orientation="vertical">
+                                <Spinner
+                                    android:id="@+id/skilltxt"
+                                    android:paddingLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
+                                    android:fontFamily="@font/cairoregular"
+                                    android:hint="Title"
+                                    android:layout_marginTop="23dp"
+                                    android:paddingBottom="35dp"
+                                    android:textAllCaps="false"
+                                    android:textAlignment="textStart"
+                                    android:textSize="17dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:background="@drawable/button_border"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".20">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Save"
+                        android:id="@+id/savebtn"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:background="@drawable/button_border2"
+                        android:fontFamily="@font/cairoregular"
+
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

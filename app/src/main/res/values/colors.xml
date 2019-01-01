@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#32374a</color>
+    <color name="colorPrimaryDark">#32374a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Darabnii_white">#e6e5ea</color>
+    <color name="Darabnii_accent">#30bfd0</color>
+    <color name="black">#000000</color>
+    <color name="blue">#006AB5</color>
+    <color name="barrbny">#32374a</color>
+    <color name="black_transprancy">#99000000</color>
+
+
+
+    <color name="whiteM">#fdfdfd</color>
+    <color name="blueM">#006ab5</color>
+    <color name="blackM">#32374a</color>
+    <color name="white1">#faf7f7</color>
+
+
+</resources>

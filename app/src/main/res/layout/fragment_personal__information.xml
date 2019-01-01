@@ -1,0 +1,284 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.drrabny.darrbyproject.Fragments.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Personal Information"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:background="@color/Darabnii_white">
+            <Button
+                android:id="@+id/btn_updateInfo_save"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="bottom"
+                android:text="Save"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="55dp"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="@drawable/txteditprofile"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/im"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/colorPrimary"
+                        android:src="@drawable/profile"/>
+
+                    <ImageButton
+                        android:id="@+id/im_setting_edit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="75dp"
+                        android:layout_alignLeft="@id/im"
+                        android:src="@drawable/edit"
+                        />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/txt_updateInfo_fname"
+                    android:layout_width="match_parent"
+                    android:hint="First Name"
+                    android:textColorHint="@color/blue"
+                    android:background="@drawable/txteditprofile"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/txt_updateInfo_lname"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/txteditprofile"
+                    android:hint="Last Name"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rad_updateInfo_male"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textSize="15sp"
+                            android:textColor="@color/blue"
+                            />
+                        <RadioButton
+                            android:id="@+id/rad_updateInfo_female"
+                            android:layout_width="0dp"
+                            android:textColor="@color/blue"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txt_updateInfo_data"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHighlight="@color/black"
+                    android:shadowColor="@color/black"
+                    android:hint="14/2/1996"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:inputType="date"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/txt_updateInfo_jobTitle"
+                    android:layout_width="match_parent"
+                    android:hint="Job Title"
+                    android:textColorHint="@color/blue"
+                    android:background="@drawable/txteditprofile"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_country"
+                    android:layout_width="match_parent"
+                    android:hint="Country"
+                    android:textSize="15sp"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_governorate"
+                    android:layout_width="match_parent"
+                    android:hint="Governorate"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHint="@color/blue"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_city"
+                    android:layout_width="match_parent"
+                    android:hint="City"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_address"
+                    android:layout_width="match_parent"
+                    android:hint="Address Description(optional)"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_university"
+                    android:layout_width="match_parent"
+                    android:hint="University"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/txteditprofile"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_faculty"
+                    android:layout_width="match_parent"
+                    android:hint="faculty"
+                    android:textColorHint="@color/blue"
+                    android:background="@drawable/txteditprofile"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_phone"
+                    android:layout_width="match_parent"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_marital_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Marital State"
+                    android:textColorHint="@color/blue"
+                    android:background="@drawable/txteditprofile"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    />
+                <EditText
+                    android:id="@+id/txt_updateInfo_military"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Military service State"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    />
+                <EditText
+                    android:id="@+id/txt_updateInfo_linked"
+                    android:layout_width="match_parent"
+                    android:hint="Linked In"
+                    android:textSize="15sp"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_sky"
+                    android:layout_width="match_parent"
+                    android:hint="Skybe"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/txteditprofile"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_updateInfo_cover_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Cover title"
+                    android:textSize="15sp"
+                    android:background="@drawable/txteditprofile"
+                    android:textColorHint="@color/blue"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</FrameLayout>

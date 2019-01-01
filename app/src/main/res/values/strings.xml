@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Darrbny</string>
+    <string name="title_activity_navigation">Darrbny</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    //sharedPrefrence file name
+    <string name="pref_file">com.darrbny.preference_file</string>
+    <string name="pref_login_status">com.darrbny.preference_login_status</string>
+    <string name="pref_token">com.darrbny.preference_token</string>
+</resources>

@@ -1,0 +1,223 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.drrabny.darrbyproject.Fragments.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="600dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".4"
+                        android:background="@color/barrbny">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".6">
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairosemibold"
+                        android:gravity="center"
+                        android:text="SETTING"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_marginTop="25dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:gravity="center">
+
+                        <android.support.v7.widget.CardView
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="10dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardPreventCornerOverlap="false">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/Accountbtn"
+                                    android:paddingLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/cairoregular"
+                                    android:text="Account "
+                                    android:textAllCaps="false"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="17dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/Darabnii_white"
+                                    android:paddingRight="7dp"
+                                    android:drawableEnd="@drawable/backarrow"
+                                    android:background="@drawable/button_border2"
+                                    />
+                                <Button
+                                    android:id="@+id/updatePass_btn"
+                                    android:paddingLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/cairoregular"
+                                    android:text="Update Password"
+                                    android:textAllCaps="false"
+                                    android:layout_marginBottom="10dp"
+                                    android:paddingRight="7dp"
+                                    android:drawableEnd="@drawable/backarrow"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="17dp"
+                                    android:textColor="@color/Darabnii_white"
+                                    android:background="@drawable/button_border2"
+
+                                    />
+                                <Button
+                                    android:id="@+id/personalInfo_btn"
+                                    android:paddingLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/cairoregular"
+                                    android:text="Personal Information"
+                                    android:textAllCaps="false"
+                                    android:layout_marginBottom="10dp"
+                                    android:paddingRight="7dp"
+                                    android:drawableEnd="@drawable/backarrow"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="17dp"
+                                    android:textColor="@color/Darabnii_white"
+                                    android:background="@drawable/button_border2"
+
+                                    />
+
+                                <Button
+                                    android:id="@+id/language_btn"
+                                    android:paddingLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/cairoregular"
+                                    android:text="Language"
+                                    android:layout_marginBottom="10dp"
+                                    android:paddingRight="7dp"
+                                    android:drawableEnd="@drawable/backarrow"
+                                    android:textAllCaps="false"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="17dp"
+                                    android:textColor="@color/Darabnii_white"
+                                    android:background="@drawable/button_border2"
+                                    />
+                                <Button
+                                    android:paddingLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/cairoregular"
+                                    android:textAllCaps="false"
+                                    android:paddingRight="7dp"
+                                    android:drawableEnd="@drawable/backarrow"
+                                    android:text="Skills"
+                                    android:textAlignment="textStart"
+                                    android:id="@+id/skills_btn"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="17dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/Darabnii_white"
+                                    android:background="@drawable/button_border2"
+
+
+                                    />
+                                <Button
+                                    android:paddingLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/cairoregular"
+                                    android:textAllCaps="false"
+                                    android:paddingRight="7dp"
+                                    android:drawableEnd="@drawable/backarrow"
+                                    android:text="Experience"
+                                    android:id="@+id/experiance_btn"
+
+                                    android:textAlignment="textStart"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="17dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/Darabnii_white"
+                                    android:background="@drawable/button_border2"
+                                    />
+                                <Button
+                                    android:id="@+id/projects_btn"
+                                    android:paddingLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/cairoregular"
+                                    android:textAllCaps="false"
+                                    android:paddingEnd="7dp"
+                                    android:drawableEnd="@drawable/backarrow"
+                                    android:text="Projects"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="17dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/Darabnii_white"
+                                    android:background="@drawable/button_border2"
+                                    />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

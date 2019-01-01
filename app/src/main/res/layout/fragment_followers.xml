@@ -1,0 +1,384 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.drrabny.darrbyproject.Fragments.FollowersFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="40"
+            android:background="@color/blackM"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/whiteM"
+                android:text="Followings"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="60"
+            android:layout_height="0dp"
+            android:background="@color/white1">
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="70dp"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/whiteM"
+            app:cardPreventCornerOverlap="false"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerInside"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/xx"
+                                />
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/iogo"
+                                />
+                            <LinearLayout
+                                android:layout_margin="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:orientation="vertical"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/blackM"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:text="Vodafone Egypt"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/blackM"
+                                    android:textSize="15dp"
+                                    android:gravity="center"
+                                    android:text="Mobile Service Provider"
+                                    android:layout_height="wrap_content" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/xx"
+                                android:scaleType="centerInside"
+                                />
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/iogo"
+                                />
+                            <LinearLayout
+                                android:layout_margin="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:orientation="vertical"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:textColor="@color/blackM"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:text="Vodafone Egypt"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/blackM"
+                                    android:textSize="15sp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Mobile Service Provider"
+                                    android:layout_height="wrap_content" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/xx"
+                                android:scaleType="centerInside"
+                                />
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/iogo"
+                                />
+                            <LinearLayout
+                                android:layout_margin="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:orientation="vertical"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:textColor="@color/blackM"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:text="Vodafone Egypt"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/blackM"
+                                    android:textSize="15sp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Mobile Service Provider"
+                                    android:layout_height="wrap_content" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_margin="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/xx"
+                                android:scaleType="centerInside"
+                                />
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/iogo"
+                                />
+                            <LinearLayout
+                                android:layout_margin="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:orientation="vertical"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:textColor="@color/blackM"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:text="Vodafone Egypt"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/blackM"
+                                    android:textSize="15sp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Mobile Service Provider"
+                                    android:layout_height="wrap_content" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:src="@drawable/star"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+</FrameLayout>

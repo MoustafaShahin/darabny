@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/deleteLanguage"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="50dp"
+            android:src="@drawable/x"
+            android:scaleType="center"
+            android:background="@color/blackM"/>
+
+        <TextView
+            android:id="@+id/txt_language"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="50dp"
+            android:text="lang Nmae"
+            android:fontFamily="@font/cairoregular"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@color/blackM"/>
+        <RatingBar
+            android:paddingTop="10dp"
+            android:paddingBottom="22dp"
+            android:background="@color/barrbny"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".5"
+            style="@style/myratingbarr"/>
+
+    </LinearLayout>
+
+</LinearLayout>
