@@ -36,7 +36,7 @@ import retrofit2.Response;
 public class SearchFragment extends Fragment {
     private View view;
     private PrefConfig prefConfig;
-    private ImageView searchbtn;
+    private Button searchbtn;
     private ApiInterface apiInterface;
     private Button btnT,btnC,btnS;
     private RecyclerView company,student,faculty,training;

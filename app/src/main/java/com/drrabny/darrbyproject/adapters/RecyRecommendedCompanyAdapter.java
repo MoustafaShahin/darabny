@@ -52,7 +52,7 @@ public class RecyRecommendedCompanyAdapter extends RecyclerView.Adapter<RecyReco
         holder.btn_follow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addFollow($recmondedcomps.get(position).getCompanyId());
+                addFollow($recmondedcomps.get(position).getId());
                 $recmondedcomps.remove(position);
                 notifyDataSetChanged();
             }

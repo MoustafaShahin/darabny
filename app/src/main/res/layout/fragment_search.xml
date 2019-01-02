@@ -32,7 +32,7 @@
 
                    <EditText
                        android:id="@+id/searchq"
-                       android:layout_width="328dp"
+                       android:layout_width="300dp"
                        android:layout_height="30dp"
                        android:background="@drawable/etxtcorner"
                        android:fontFamily="@font/cairoregular"
@@ -42,13 +42,16 @@
                        android:textColor="@color/blue"
                        android:textSize="20dp" />
 
-                   <ImageView
+                   <Button
                        android:id="@+id/searchbtn"
-                       android:layout_width="30dp"
+                       android:layout_width="wrap_content"
                        android:layout_height="30dp"
-                       android:layout_margin="5dp"
-                       android:backgroundTint="@color/blue"
-                       android:src="@drawable/search" />
+                       android:layout_gravity="center_horizontal"
+                       android:background="@drawable/button_border"
+                       android:drawableEnd="@drawable/ic_search"
+                       android:fontFamily="@font/cairobold"
+                       android:text="search"
+                       android:textColor="@color/Darabnii_accent" />
                </LinearLayout>
 
                 <Button

@@ -51,6 +51,7 @@ public class Companies_ {
     @SerializedName("created_at")
     @Expose
     private Object createdAt;
+
     @SerializedName("updated_at")
     @Expose
     private Object updatedAt;

@@ -39,7 +39,7 @@ public class RecyFollwingAdapter extends RecyclerView.Adapter<RecyFollwingAdapte
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
         holder.txtTitle.setText(followings.get(position).getName());
-        Picasso.with(context).load(followings.get(position).getCoverPhoto()).into(holder.imageView);
+        Picasso.with(context).load(followings.get(position).getLogo()).into(holder.imageView);
 
     }
 

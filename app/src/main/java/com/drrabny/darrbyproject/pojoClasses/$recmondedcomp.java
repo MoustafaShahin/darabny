@@ -10,6 +10,14 @@ public class $recmondedcomp {
     @SerializedName("companyId")
     @Expose
     private Integer companyId;
+
+    public Integer getId() {
+        return id;
+    }
+
+    @SerializedName("id")
+    @Expose
+    private Integer id;
     @SerializedName("name")
     @Expose
     private String name;
