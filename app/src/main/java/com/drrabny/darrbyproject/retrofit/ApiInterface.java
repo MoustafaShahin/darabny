@@ -95,7 +95,7 @@ public interface ApiInterface {
     Call<AccountDetail> EXPERIENCE_CALL(@Header("Authorization") String Authorization);
 
     //Update Student Acount Information
-    @POST("api/Student/Account")
+    @POST("Student/Account")
     Call<UpdateStudentAcountInformation> UPDATE_STUDENT_ACOUNT_INFORMATION_CALL(@Header("Authorization") String tokin,
                                                                                 @Query("email") String email,
                                                                                 @Query("username") String username,
@@ -119,7 +119,7 @@ public interface ApiInterface {
 
     @POST("Student/Experience")
     Call<AddExperience> ADD_EXPERIENCE_CALL(@Header("Authorization") String Authorization, @Query("title") String title
-            , @Query("start") String start, @Query("end") String end, @Query("description") String description);
+            , @Query("dateFrom") String start, @Query("dateTo") String end, @Query("description") String description);
 
     @PUT("Student/attachSkill/{id}")
     Call<ResponseFollow> ADD_SKILL_CALL(@Header("Authorization") String Authorization,@Path("id")int id);

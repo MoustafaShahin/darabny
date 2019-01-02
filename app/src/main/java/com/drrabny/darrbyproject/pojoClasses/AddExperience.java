@@ -16,6 +16,13 @@ public class AddExperience {
     @SerializedName("error")
     @Expose
     private Error error;
+    @SerializedName("success")
+    @Expose
+    private String success;
+
+    public String getSuccess() {
+        return success;
+    }
 
     public String getStatus() {
         return status;

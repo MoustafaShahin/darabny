@@ -7,7 +7,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,48 +29,66 @@ import retrofit2.Response;
 
 public class ExperianceFragment extends Fragment {
 
-    Context context;
+    private Context context;
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private ExperienceAdapter adapter;
     private ApiInterface apiInterface;
     private List<Experience> experiences;
-    PrefConfig prefConfig;
-
+    private PrefConfig prefConfig;
+    private View v;
+    private String token;
+    private Button button;
+    private ProgressDialog progressDialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v= inflater.inflate(R.layout.fragment_experiance, container, false);
-        context=getActivity();
-        prefConfig=new PrefConfig(context);
-        final String token=prefConfig.readToken();
-        recyclerView=(RecyclerView)v.findViewById(R.id.recycleView_Experience);
-        layoutManager=new LinearLayoutManager(context);
+        v = inflater.inflate(R.layout.fragment_experiance, container, false);
+        initview();
+        getExperience();
+        onclick();
+
+        return v;
+    }
+
+    private void initview() {
+        context = getActivity();
+        button = v.findViewById(R.id.addExper_btn);
+        prefConfig = new PrefConfig(context);
+        recyclerView = (RecyclerView) v.findViewById(R.id.recycleView_Experience);
+        layoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
+        apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
+        token = prefConfig.readToken();
+    }
 
-        apiInterface= ApiClient.getApiClient().create(ApiInterface.class);
-        Log.e("yessssspppp",token);
+    private void onclick() {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AddExperienceFragment Experience = new AddExperienceFragment();
+                FragmentManager manager = getFragmentManager();
+                manager.beginTransaction()
+                        .replace(R.id.content_frame, Experience, Experience.getTag())
+                        .commit();
+            }
+        });
+    }
 
-        Call<AccountDetail> call=apiInterface.EXPERIENCE_CALL("Bearer "+token);
+    private void getExperience() {
 
+        Call<AccountDetail> call = apiInterface.EXPERIENCE_CALL("Bearer " + token);
         //setup progress bar before call
-        final ProgressDialog progressDialog =new ProgressDialog(context);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Page is Loading.......");
-        progressDialog.show();
-
-
+        setprogress();
         call.enqueue(new Callback<AccountDetail>() {
             @Override
             public void onResponse(Call<AccountDetail> call, Response<AccountDetail> response) {
                 if (progressDialog.isShowing())
                     progressDialog.dismiss();
-
-                Log.e("dzfges",response.code()+"");
-                if(response.isSuccessful()) {
+                if (response.isSuccessful()) {
                     //To handel adapter
                     experiences = response.body().getExperiences();
                     adapter = new ExperienceAdapter(experiences, context);
@@ -84,25 +101,16 @@ public class ExperianceFragment extends Fragment {
             public void onFailure(Call<AccountDetail> call, Throwable t) {
                 if (progressDialog.isShowing())
                     progressDialog.dismiss();
-                Log.e("noo","");
 
             }
         });
 
-        Button button=v.findViewById(R.id.addExper_btn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AddExperienceFragment Experience=new AddExperienceFragment();
-                FragmentManager manager=getFragmentManager();
-                manager.beginTransaction()
-                        .replace(R.id.content_frame,Experience,Experience.getTag())
-                        .commit();
-            }
-        });
-        return v;
     }
 
-
-
+    private void setprogress() {
+        progressDialog = new ProgressDialog(context);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Page is Loading.......");
+        progressDialog.show();
+    }
 }

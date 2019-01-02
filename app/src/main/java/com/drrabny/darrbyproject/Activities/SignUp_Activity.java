@@ -255,15 +255,11 @@ private void regesterccall(){
 
     }
     private void showDialog() {
-
-
         // Get Current Date
         final Calendar c = Calendar.getInstance();
         final int mYear = c.get(Calendar.YEAR);
         int mMonth = c.get(Calendar.MONTH);
         final int mDay = c.get(Calendar.DAY_OF_MONTH);
-
-
         DatePickerDialog datePickerDialog = new DatePickerDialog(this,
                 new DatePickerDialog.OnDateSetListener() {
                     @Override

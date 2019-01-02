@@ -2,6 +2,7 @@ package com.drrabny.darrbyproject.Fragments;
 
 import android.app.Dialog;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
@@ -87,7 +88,7 @@ public class UpdatePasswordFragment extends Fragment {
         } else {
             ShowWaiting();
             Call<ChangeStudentPassword> call = apiInterface.CHANGE_STUDENT_PASSWORD_CALL
-                    (token,CurrentPass,NewPass,RePass);
+                    ("Bearer " + token, CurrentPass, NewPass, RePass);
             call.enqueue(new Callback<ChangeStudentPassword>() {
                 @Override
 
@@ -97,13 +98,17 @@ public class UpdatePasswordFragment extends Fragment {
                     if (response.isSuccessful()) {
 
                         if (response.body().getStatus().equals(true)) {
-                            Log.e("yes", response.code() + "");
-                            prefConfig.makeToast("updata is done");
+                            prefConfig.makeToast(response.body().getSuccess());
+                            SettingFragment settingFragment = new SettingFragment();
+                            FragmentManager manager = getFragmentManager();
+                            manager.beginTransaction()
+                                    .replace(R.id.content_frame, settingFragment, settingFragment.getTag()).addToBackStack(null)
+                                    .commit();
 
                         }
                     } else {
                         Log.e("yes", response.code() + "");
-                        prefConfig.makeToast("something wrong");
+                        prefConfig.makeToast(response.message());
                         rePass.setText("");
                     }
                 }
@@ -111,8 +116,8 @@ public class UpdatePasswordFragment extends Fragment {
                 @Override
                 public void onFailure(Call<ChangeStudentPassword> call, Throwable t) {
                    progressDialog.dismiss();
-                    Log.e("kkkkkkk", call.request().toString());
-                    prefConfig.makeToast("The connection lose");
+
+                    prefConfig.makeToast(t.getMessage());
                 }
             });
         }}

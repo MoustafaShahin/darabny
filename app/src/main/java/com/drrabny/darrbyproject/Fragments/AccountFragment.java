@@ -119,12 +119,12 @@ public class AccountFragment extends Fragment {
                 @Override
                 public void onResponse(Call<UpdateStudentAcountInformation> call,
                                        retrofit2.Response<UpdateStudentAcountInformation> response) {
-                    prefConfig.makeToast("upppppppppppppppp");
 
                     if (response.isSuccessful()) {
                         if (response.body().getStatus().equals("true")) {
-                            Log.e("yes", response.code() + "");
-                            prefConfig.makeToast("updata is done");
+                            prefConfig.makeToast(response
+                                    .body().getSuccess());
+
                             SettingFragment settingFragment=new SettingFragment();
                             FragmentManager manager=getFragmentManager();
                             manager.beginTransaction()
@@ -133,7 +133,6 @@ public class AccountFragment extends Fragment {
 
                         }
                     } else {
-                        Log.e("yes", response.code() + "");
                         prefConfig.makeToast(response.message());
                         password.setText("");
                     }
@@ -141,8 +140,7 @@ public class AccountFragment extends Fragment {
 
                 @Override
                 public void onFailure(Call<UpdateStudentAcountInformation> call, Throwable t) {
-                    Log.e("kkkkkkk", call.request().toString());
-                    prefConfig.makeToast("The connection lose");
+                    prefConfig.makeToast(t.getMessage());
                 }
             });
         }}

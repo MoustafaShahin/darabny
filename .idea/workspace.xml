@@ -16,7 +16,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35c42e61-a57f-4048-8261-22db546271de" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -25,14 +24,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/SearchFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/SearchFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/RecyFollwingAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/RecyFollwingAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/RecyRecommendedCompanyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/RecyRecommendedCompanyAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/$recmondedcomp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/$recmondedcomp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/Companies_.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/Companies_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Activities/SignUp_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Activities/SignUp_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AccountFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AccountFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AddExperienceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AddExperienceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/ExperianceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/ExperianceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/UpdatePasswordFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/UpdatePasswordFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/AddExperience.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/AddExperience.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ChangeStudentPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ChangeStudentPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/UpdateStudentAcountInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/UpdateStudentAcountInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/retrofit/ApiInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/retrofit/ApiInterface.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,7 +55,44 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="UpdatePasswordFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/UpdatePasswordFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExperianceFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/ExperianceFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-375">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddExperienceFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AddExperienceFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/retrofit/ApiInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="121" column="116" selection-start-line="121" selection-start-column="116" selection-end-line="121" selection-end-column="116" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -2336,11 +2374,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_apply.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ResponseRegister/ResponseRegister.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ResponseRegister/Response.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/wait_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/ApplyFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/ExamFragment.java" />
@@ -2358,16 +2391,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ResponseSkills/ResponseSkills.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/view_spinner.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/SpinAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/retrofit/ApiInterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ResponseSkills/Skill.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/SkillsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/SkillsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/UpdatePasswordFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/StudentProfileFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/Personal_InformationFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AddSkillFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AddLanguageFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AccountFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/recommended_company.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up_.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_feed.xml" />
@@ -2377,7 +2407,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/$recommendedTrainingPost.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/RecyRecommendedTrainingPostseAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/RecyTrainingPostseAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Activities/SignUp_Activity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/FeedFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/$recmondedcomp.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/RecyRecommendedCompanyAdapter.java" />
@@ -2387,6 +2416,15 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/SearchFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/UpdateStudentAcountInformation.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AccountFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ChangeStudentPassword.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/UpdatePasswordFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/ExperianceFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Activities/SignUp_Activity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/AddExperience.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/retrofit/ApiInterface.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AddExperienceFragment.java" />
       </list>
     </option>
   </component>
@@ -2425,6 +2463,13 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="darrbyproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Activities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="darabny_android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="darrbyproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="adapters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2433,6 +2478,13 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="darrbyproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="Fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="darabny_android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="darrbyproject" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="pojoClasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="darabny_android" type="1abcf292:AndroidViewProjectNode" />
@@ -2594,10 +2646,19 @@
       <option name="presentableId" value="Default" />
       <updated>1545905682519</updated>
     </task>
+    <task id="LOCAL-00001" summary="search">
+      <created>1546388181834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546388181834</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -2615,7 +2676,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29317698" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49946696" weight="0.3297414" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49946696" visible="true" weight="0.3297414" />
       <window_info anchor="right" id="Android WiFi ADB" order="3" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2715,7 +2776,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first_commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first_commit" />
+    <MESSAGE value="search" />
+    <option name="LAST_COMMIT_MESSAGE" value="search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2723,64 +2785,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_add_skill.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="96" column="46" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ResponseSkills/ResponseSkills.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_spinner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/SpinAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ResponseSkills/Skill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/adapters/SkillsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/UpdatePasswordFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="112" column="44" lean-forward="true" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/SkillsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -2854,13 +2858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/retrofit/ApiInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="101" column="81" selection-start-line="101" selection-start-column="81" selection-end-line="101" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -2950,20 +2947,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/Personal_InformationFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="116" column="20" lean-forward="true" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AccountFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Activities/NavigationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -3017,24 +3000,6 @@
             <element signature="e#2406#2563#0" expanded="true" />
             <element signature="e#2562#2563#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/StudentProfileFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="213" column="37" selection-start-line="213" selection-start-column="37" selection-end-line="213" selection-end-column="37" />
-          <folding>
-            <element signature="e#5928#6085#0" expanded="true" />
-            <element signature="e#6084#6085#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Activities/SignUp_Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1315">
-          <caret line="71" column="40" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -3145,6 +3110,102 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/Error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/UpdateStudentAcountInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AccountFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="129" column="42" selection-start-line="127" selection-start-column="27" selection-end-line="131" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/StudentProfileFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="199" column="28" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/Personal_InformationFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="241" column="47" selection-start-line="241" selection-start-column="47" selection-end-line="241" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Activities/SignUp_Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="273" column="5" selection-start-line="256" selection-start-column="3" selection-end-line="273" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/ChangeStudentPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="27" selection-start-line="16" selection-start-column="4" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/pojoClasses/AddExperience.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/UpdatePasswordFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/ExperianceFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/retrofit/ApiInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="121" column="116" selection-start-line="121" selection-start-column="116" selection-end-line="121" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/drrabny/darrbyproject/Fragments/AddExperienceFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+        </state>
       </provider>
     </entry>
   </component>
